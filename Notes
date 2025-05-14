@@ -1,0 +1,13 @@
+body-parser is a middleware in Express.js used to parse the body of incoming HTTP requests (especially POST, PUT, PATCH requests) and make it accessible under req.body.
+
+ Express does not understand the incoming request data in JSON or URL-encoded format.
+
+ Eg: POST /api/users
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@example.com"
+}
+
+Request Body: { name: 'John', email: 'john@example.com' }
